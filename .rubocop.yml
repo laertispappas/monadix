@@ -1,0 +1,50 @@
+require:
+  - rubocop-performance
+  - rubocop-rspec
+  - rubocop-thread_safety
+  - rubocop-rake
+
+AllCops:
+  TargetRubyVersion: 2.6.0
+
+Metrics/BlockLength:
+  Exclude:
+    - config/**/*
+    - spec/**/*
+
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - spec/**/*
+
+Style/Documentation:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+RSpec/NamedSubject:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Max: 10
+
+RSpec/ExampleLength:
+  Max: 15
+
+Style/HashSyntax:
+  Enabled: false
+
+Style/AccessModifierDeclarations:
+  Enabled: False
+
+Metrics/MethodLength:
+  Max: 20
+
+#RSpec/LetSetup:
+#  Enabled: False
+
+RSpec/NestedGroups:
+  Max: 5
+
+RSpec/MultipleMemoizedHelpers:
+  Max: 10
